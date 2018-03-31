@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#0099cc"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fingerprint_timeout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:keepScreenOn="true"
+        android:text="Backup Setup"
+        android:gravity="center"
+        android:textColor="#33b5e5"
+        android:textSize="34sp"
+        android:paddingTop="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/backup_recovery_image"
+        android:layout_below="@id/fingerprint_timeout_title"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_backup"
+        />
+
+    <TextView
+        android:id="@+id/cloud_backup_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backup_recovery_image"
+        android:padding="16dp"
+        android:text="Cloud backup and recovery needs additional plugin which must be downloaded, allows you to save your encrypted file as single archive amount many providers such as Google Drive, One Drive, Dropbox etc."/>
+
+    <Button
+        android:id="@+id/cloud_backup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cloud_backup_label"
+        android:text="Cloud Backup"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/local_backup_label"
+        android:layout_below="@id/cloud_backup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Local backup and recovery allows you to store encrypted password file in SD Card or local storage of your phone which can be later retrived"/>
+
+    <Button
+        android:id="@+id/local_backup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/local_backup_label"
+        android:text="Local Backup"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

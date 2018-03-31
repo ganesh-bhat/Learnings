@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="drawer_application_options">
+        <item id="backupRestoreOption">Backup &amp; Restore Settings</item>
+        <item id="changePin">Change Pin</item>
+    </string-array>
+
+    <string-array name="drawer_sample_tags">
+        <item>#Bank</item>
+        <item>#Site</item>
+        <item>#AtmPIN</item>
+        <item>#CreditCard</item>
+        <item>#DebitCard</item>
+        <item>#NetbankingPin</item>
+        <item>#TransactionPin</item>
+        <item>#SitePassword</item>
+        <item>#DmatAccount</item>
+        <item>#CardGrid</item>
+        <item>#MutualFund</item>
+    </string-array>
+
+</resources>
