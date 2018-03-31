@@ -55,13 +55,25 @@ def processFiles(extractedFiles):
                 if lineNumber == 1:
                     print 'header found'
                     continue;
-                print row
+                #print row[0], row[5],row[7],row[9]
+                ticker = row[0]
+                close = row[5]
+                prevClose = row[7]
+                tradedValue = row[9]
+                percChange = float(close)/float(prevClose)  -1
+                resultRow = [ticker,percChange,float(tradedValue)]
+                listOfLists.append(resultRow)
 
+               # print ticker,"{:,.1f}".format(float(tradedValue)/1e6) + "M INR","{:,.1f}".format(percChange*100)+"%"
 
+    return listOfLists;
 
 
 
 #downloadFile(nseStockUrl, stockFile)
 #extractedFiles = extractFiles(stockFile,extractPath)
 extractedFiles = [extractPath+'/'+'cm16MAR2018bhav.csv'];
-processFiles(extractedFiles)
+stocks = processFiles(extractedFiles)
+sortedList = sorted(stocks,key=lambda x:x[2],reverse=True)
+sortedList.
+
