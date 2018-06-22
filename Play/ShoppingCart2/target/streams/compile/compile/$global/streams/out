@@ -1,0 +1,28 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(D:\Git\Play\ShoppingCart2\app\models\TodoItem.java)
+[debug] Removed products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated sources: Set(D:\Git\Play\ShoppingCart2\app\models\TodoItem.java)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated sources: Set(D:\Git\Play\ShoppingCart2\app\models\TodoItem.java)
+[info] Compiling 1 Java source to D:\Git\Play\ShoppingCart2\target\scala-2.10\classes...
+[debug] Attempting to call javac directly...
+[debug] com.sun.tools.javac.Main not found with appropriate method signature; forking javac instead
+[debug] Forking javac: javac @C:/Users/ganes/AppData/Local/Temp/sbt_2db1bb78/argfile
+[error] D:\Git\Play\ShoppingCart2\app\models\TodoItem.java:6: error: <identifier> expected
+[error] import javax.
+[error]              ^
+[error] D:\Git\Play\ShoppingCart2\app\models\TodoItem.java:8: error: class, interface, or enum expected
+[error] @Entity
+[error]  ^
+[error] 2 errors
+[debug] javac returned exit code: 1
+[error] (compile:compile) javac returned nonzero exit code

@@ -1,4 +1,4 @@
-package com.algol.challenges;
+package com.algorithms.challenges;
 
 import java.util.Scanner;
 
