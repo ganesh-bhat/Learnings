@@ -11,30 +11,6 @@ import java.util.stream.IntStream;
  */
 public class MinHeap {
 
-    public static void main(String[] args) {
-        MinHeap heap = new MinHeap();
-        heap.add(6);
-        heap.add(11);
-        heap.add(3);
-        heap.add(1);
-        heap.add(14);
-
-        for(int val:IntStream.range(18,25).toArray()) {
-            heap.add(val);
-        }
-
-        System.out.println(Arrays.toString(heap.items));
-
-        System.out.println(heap.poll());
-        System.out.println(heap.poll());
-        System.out.println(heap.poll());
-        System.out.println(heap.poll());
-        System.out.println(heap.poll());
-
-
-
-    }
-
 
     int size = 0;
     int capacity = 16;
@@ -94,11 +70,11 @@ public class MinHeap {
     }
 
     /* operations*/
-    private int peek() {
+    public int peek() {
         return items[0];
     }
 
-    private int poll() {
+    public int poll() {
         int result = items[0];
         items[0] = items[size-1];
         size--;
@@ -108,7 +84,7 @@ public class MinHeap {
 
    
 
-    private void add(int num ) {
+    public void add(int num ) {
         ensureCapacity();
         items[size] = num;
         size++;

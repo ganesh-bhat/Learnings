@@ -1,5 +1,7 @@
 package com.datatructure.list;
 
+import java.util.ArrayDeque;
+
 /**
  * Created by ganes on 10-06-2018.
  */
@@ -13,27 +15,30 @@ public class LinkedListReversal<T> {
             this.value = value;
         }
     }
-    Node<T> root;
-    Node<T> head;
+
+    private Node<T> head;
+    private Node<T> tail;
 
     public void add(T value) {
-        if(root == null)
+        if(head == null)
         {
-            root = new Node(value);
-            head = root;
+            head = new Node(value);
+            tail = head;
         } else {
-            head.next = new Node(value);
-            head = head.next;
+            tail.next = new Node(value);
+            tail = tail.next;
         }
 
     }
 
     public void print() {
-        Node current = root;
+        Node current = head;
         while (current!=null) {
             System.out.println(current.value);
             current = current.next;
         }
+
+        System.out.println("-- done printing --");
     }
 
     public static void main(String[] args) {
@@ -47,6 +52,31 @@ public class LinkedListReversal<T> {
 
         list.print();
 
+        list.reverse();
+        list.print();
 
+    }
+
+    private void reverse() {
+        ArrayDeque<Node<T>> stack = new ArrayDeque<>();
+
+        Node<T> node = head;
+        while(node!=null) {
+            stack.push(node);
+            node = node.next;
+        }
+        tail = null;
+        head = null;
+        while(!stack.isEmpty()) {
+            node = stack.pop();
+            node.next = null;
+            if(head == null) {
+                head = node;
+            }
+            if(tail!=null) {
+                tail.next = node;
+            }
+            tail = node;
+        }
     }
 }

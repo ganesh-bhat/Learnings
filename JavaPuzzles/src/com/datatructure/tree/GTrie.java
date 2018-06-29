@@ -4,6 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class GTrie {
+    class Node {
+        Map<Character,Node> children;
+        boolean isComplete;
+        Node(boolean isCompeleteWord) {
+            this.isComplete = isCompeleteWord;
+        }
+    }
 
     public SpellChecker spellChecker() {
         return new SpellChecker();
@@ -30,15 +37,7 @@ public class GTrie {
         }
     }
 
-    class Node {
-        Map<Character,Node> children;
-        boolean isComplete;
 
-        Node(boolean isCompeleteWord) {
-            this.isComplete = isCompeleteWord;
-        }
-
-    }
 
     Node root = new Node(false);
 

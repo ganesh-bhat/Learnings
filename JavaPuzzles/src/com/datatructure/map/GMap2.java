@@ -1,91 +1,157 @@
 package com.datatructure.map;
 
-import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class GMap2<K,V> {
+//ideally implement Map interface and provide entrySet, keySet
+public class GMap2<K, V> {
 
-    static class Node<K,V> implements Map.Entry<K,V> {
-
-        K key;
-        V value;
-        int hash;
-        Node next;
-
-        @Override
-        public K getKey() {
-            return null;
-        }
-
-        @Override
-        public V getValue() {
-            return null;
-        }
-
-        @Override
-        public V setValue(V value) {
-            return null;
-        }
-    }
-
-    transient Node[] items;
-    int capacity = 16;
-    float loadFactor = 0.75f;
-    int treshold = (int)(capacity * loadFactor);
+    transient private Node<K,V>[] items;
+    private int capacity = 16;
+    private float loadFactor = 0.75f;
     int size = 0;
-
-    public GMap2(int capacity) {
-        this.capacity = capacity;
-    }
 
     public GMap2(int capacity, float loadFactor) {
         this.capacity = capacity;
         this.loadFactor = loadFactor;
     }
 
-    public void put(K key, V value) {
-        ensureCapacity();
+    public GMap2() {
+        init();
     }
 
-    private void ensureCapacity() {
-        if((size+1)>= treshold) {
-            int newCapacity = capacity << 1;
-            int newTreshold = (int)(capacity * loadFactor);
+    private void init() {
+        items = new Node[capacity];
+    }
 
-            Node[] newItems = Arrays.copyOf(items,newCapacity);
+    public V put(K key, V value){
+        ensureCapacity();
+        V oldValue = null;
+        int index = 0;
+        int hashCode = 0;
+        if(key != null) {
+            hashCode = key.hashCode();
+            index = hashCode % capacity;
+        }
+        if(items[index]==null) {
+            items[index] = new Node(hashCode, key, value);
+        } else {
 
-            for(int index=0;index<items.length;index++) {
-                if(items[index]!=null) {
-                    Node node = items[index];
-                    int in = (node.hash % newItems.length);
-                    if(node.next == null && newItems[in] == null) {
-                        newItems[in] = node;
-                    } else {
-
-
-
-
-                    }
+            Node<K,V> currentNode = items[index];
+            while(currentNode!=null) {
+                if((currentNode.key!=null && currentNode.key.equals(key)) || (currentNode.key == key)) {
+                    oldValue = currentNode.getValue();
+                    currentNode.setValue(value);
+                    break;
                 }
+                currentNode = currentNode.next;
             }
 
+            if(currentNode == null) {
+                items[index] = new Node(hashCode, key, value, currentNode);
+            }
+        }
+        size++;
+        return oldValue;
+    }
 
+    public V get(K key) {
+        V value = null;
+        int index = 0;
+        int hashCode = 0;
+        if(key != null) {
+            hashCode = key.hashCode();
+            index = hashCode % capacity;
+        }
+
+        Node<K,V> currentNode = items[index];
+        while(currentNode!=null) {
+            if((currentNode.key!=null && currentNode.key.equals(key)) || (currentNode.key == key)) {
+                value = currentNode.getValue();
+               break;
+            }
+            currentNode = currentNode.next;
+        }
+        size--;
+        return value;
+    }
+
+
+    private void ensureCapacity() {
+        //check load factory and size
+        if(loadFactor*capacity <= size) {
+            int newCapacity = capacity << 1;
+            Node<K,V>[] newItems = new Node[newCapacity];
+
+            for(int i=0;i<capacity;i++) {
+                Node<K,V> item = items[i];
+                Node<K,V> next;
+                while(item!=null) {
+                    if(item.hash == 0 && item.key!=null) {
+                        item.hash = item.key.hashCode();
+                    }
+                    int newIndex = item.hash % newCapacity;
+                    next = item.next;//keep backup
+
+                    if(newItems[newIndex]!=null) {
+                        Node<K,V> existingNode = newItems[newIndex];
+                        item.next = existingNode;
+                        newItems[newIndex] = item;
+                    } else {
+                        item.next = null;
+                        newItems[newIndex] = item;
+                    }
+                    item = next;
+                }
+
+            }
+
+            capacity = newCapacity;
+            items = newItems;
         }
     }
 
-   /* public V get(K key) {
 
+
+    static class Node<K,V> implements Map.Entry<K,V> {
+
+        int hash;
+        K key;
+        V value;
+        Node<K,V> next;
+
+        Node(int hash, K key, V value) {
+            this.hash = hash;
+            this.key = key;
+            this.value = value;
+            this.next = null;
+        }
+
+        Node(int hash, K key, V value, Node<K,V> next) {
+            this.hash = hash;
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
+
+        @Override
+        public K getKey() {
+            return key;
+        }
+
+        @Override
+        public V getValue() {
+            return value;
+        }
+
+        @Override
+        public V setValue(V value) {
+            V oldValue = this.value;
+           this.value = value;
+           return oldValue;
+        }
     }
-
-    public Set<Map.Entry<K,V>> entrySet() {
-
-    }
-
-
-    public Set<K> keySet() {
-
-    }*/
-
 
 }

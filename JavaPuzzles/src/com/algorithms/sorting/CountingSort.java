@@ -19,7 +19,6 @@ public class CountingSort {
     }
 
     private static void countingSort(int[] numbers) {
-
         int min = numbers[0];
         int max = numbers[0];
         for(int i=0;i<numbers.length;i++) {
@@ -50,8 +49,6 @@ public class CountingSort {
         for(int i=min,j=0;i<numbers.length;i++,j++) {
             numbers[j] = result[i];
         }
-
-
     }
 
 }

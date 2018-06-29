@@ -15,19 +15,18 @@ public class InsertionSort {
     }
 
     private static void insertSort(int[] array) {
-
         for(int i=1;i<array.length;i++) {
-            int num = array[i];
-            int numIndex = i;
-            for(int j=i-1;j>=0;j--) {
-                if(array[j]>num) {
-                    array[numIndex] = array[j];
-                    numIndex = j;
-                    //delay the actual value updation, keep moving numbers next..
-                }
+            int j=i;
+            while(j>0 && (array[j-1] > array[j]) ) {
+                swap(array, j, j-1);
+                j = j-1;
             }
-            //finally move the number to its right place
-            array[numIndex] = num;
         }
+    }
+
+    private static void swap(int[] array, int j, int i) {
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }

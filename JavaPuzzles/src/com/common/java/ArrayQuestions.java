@@ -45,6 +45,33 @@ public class ArrayQuestions {
     }
 
 
+    public static<T> void rotate(T[] arr) {
+        T temp = arr[arr.length-1];
+        for(int i=arr.length-1;i>0;i--) {
+            arr[i] = arr[i-1];
+        }
+
+        arr[0] = temp;
+    }
+
+    public static<T> void rotate(T[] arr, int count) {
+        for(int i=0;i<count;i++) {
+            rotate(arr);
+        }
+    }
+
+    public static<T> void exchangeDiagonals(T[][] arr) {
+        for(int i=0;i<arr.length;i++) {
+            swap(arr, i, i, i, arr.length-1-i);
+        }
+    }
+
+    private static<T> void swap(T[][] arr, int x1, int y1, int x2, int y2) {
+        T temp = arr[x1][y1];
+        arr[x1][y1] = arr[x2][y2];
+        arr[x2][y2] = temp;
+
+    }
 
 
 

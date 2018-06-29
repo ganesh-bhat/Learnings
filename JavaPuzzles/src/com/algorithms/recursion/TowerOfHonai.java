@@ -18,8 +18,6 @@ public class TowerOfHonai {
             System.out.println("moving disk "+n+" from "+source+" to "+dest);
             return;
         }
-
-
         move(n-1,source, axe, dest);
         System.out.println("moving disk "+n+" from "+source+" to "+dest);
         move(n-1,axe, dest, source);
