@@ -13,3 +13,6 @@ emtr.on('greet',function() {
 console.log('hello');
 
 emtr.emit('greet');
+
+
+

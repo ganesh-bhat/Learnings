@@ -1,11 +1,17 @@
 package com;
 
+import java.util.regex.Pattern;
+
 /**
  * Created by ganes on 20-06-2018.
  */
 public class Expirements {
 
     public static void main(String[] args) {
+
+        Pattern pattern = Pattern.compile("[A-Za-z0-9]");
+        System.out.println(pattern.matcher("b").matches());
+
         //System.out.println(tableSizeFor(34));
         //testBitwiseAndMod();
         System.out.println(13>>1);
