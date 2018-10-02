@@ -8,7 +8,7 @@ import java.util.Arrays;
  *
  * https://www.geeksforgeeks.org/counting-sort/
  *
- * basis for radix sort, useful when the numbers are small in range
+ * basis for radix quickSort, useful when the numbers are small in range
  */
 public class CountingSort {
     public static void main(String[] args) {

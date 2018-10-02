@@ -12,7 +12,7 @@ public class MergeSort {
             return;
         }
 
-        int mid = low+ (high-low)/2;
+        int mid = (low+ high)/2;
         mergeSort(array,aux,low,mid);
         mergeSort(array,aux,mid+1,high);
         merge(array, aux, low, mid,high);

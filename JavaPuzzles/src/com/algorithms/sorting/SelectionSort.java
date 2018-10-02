@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Stable sorting - O(n^2) complexity
  * When you're doing something quick and dirty and for some reason you can't just use the standard library's sorting algorithm.
- * The only advantage these have over insertion sort is being slightly easier to implement.
+ * The only advantage these have over insertion quickSort is being slightly easier to implement.
  */
 public class SelectionSort {
     public static void main(String[] args) {

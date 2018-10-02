@@ -1,5 +1,8 @@
 package com.algorithms.arrays;
 
+/**
+ * given string and number of rows given, place then in n rows and print them in zig zag
+ */
 public class StringZigZag {
 
 

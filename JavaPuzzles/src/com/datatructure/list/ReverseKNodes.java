@@ -54,7 +54,7 @@ public class ReverseKNodes {
                 cur = cur.next;
             }
             if(i==k+1) {
-                //gor all k nodes
+                //got all k nodes
                 while(!stack.isEmpty()) {
                     Node node = stack.pop();
                     if(!capturedLastNode) {

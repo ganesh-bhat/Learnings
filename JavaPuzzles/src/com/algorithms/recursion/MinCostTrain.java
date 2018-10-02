@@ -1,42 +1,42 @@
 package com.algorithms.recursion;
 
+import java.util.Arrays;
+
 /**
- * Created by ganes on 19-05-2018.
+ * Memoized solution for mincost
  */
 public class MinCostTrain {
 
+
     public static void main(String[] args) {
-
         int[][] cost = {
-                {0,10,75,94,100},
-                {-1,0,35,50,80},
-                {-1,-1,0,80,100},
-                {-1,-1,-1,0,110},
-                {-1,-1,-1,-1,0},
+                {0,10,75,94},
+                {-1,0,35,50},
+                {-1,-1,0,80},
+                {-1,-1,-1,0}
         };
+        int[][] memo = new int[cost.length][cost.length];
 
-        System.out.println(calcCost(cost, 0, 4));
-
+        int out = findMinDistance(cost, memo, 0,3);
+        System.out.println(out);
     }
 
-    static int calcCost(int[][] costs, int s, int d) {
-
-        if(s<0||d<0) {
-            return 0;
+    private static int findMinDistance(int[][] cost, int[][] memo, int start, int end) {
+        if(start+1 == end || start == end) {
+            //only one hop
+            return cost[start][end];
         }
 
-        if(s == d || s == d-1) {
-            return costs[s][d];
-        }
-
-        int minCost =  costs[s][d];
-
-        for(int i=s+1;i<d;i++) {
-            int temp =   calcCost(costs, s, i) +  calcCost(costs, i, d);
-            if(temp < minCost) {
-                minCost = temp;
+        int minCost = cost[start][end];
+        if(memo[start][end]== 0) {
+            for(int i=start+1;i<end;i++) {
+                minCost = Math.min(minCost, findMinDistance(cost,memo, start, i) + findMinDistance(cost,memo, i, end));
             }
+            memo[start][end] = minCost;
         }
-      return minCost;
+
+        return memo[start][end];
+
     }
+
 }
