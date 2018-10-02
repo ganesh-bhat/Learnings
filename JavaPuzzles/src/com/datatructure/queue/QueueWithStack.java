@@ -1,4 +1,6 @@
-package com.datatructure.stack;
+package com.datatructure.queue;
+
+import com.datatructure.stack.ArrayStack;
 
 public class QueueWithStack<T> {
 

@@ -1,5 +1,6 @@
 package com.datatructure.stack;
 
+import com.datatructure.queue.QueueWithStack;
 import org.junit.Assert;
 import org.junit.Test;
 
