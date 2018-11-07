@@ -1,6 +1,5 @@
 package com.algorithms.sorting;
 
-import com.sun.xml.internal.bind.v2.model.annotation.Quick;
 import org.junit.Test;
 
 import java.util.Arrays;

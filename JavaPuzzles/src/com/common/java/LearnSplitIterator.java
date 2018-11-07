@@ -1,8 +1,5 @@
 package com.common.java;
 
-import com.sun.corba.se.impl.resolver.SplitLocalResolverImpl;
-import jdk.nashorn.internal.codegen.SpillObjectCreator;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Spliterator;
