@@ -1,5 +1,8 @@
 package com.algorithms.arrays;
 
+/**
+ * Do simple merge as in mergesort, then based on if array is even/odd, get the middle elem or average of two elem.
+ */
 public class MedianOfSortedArrays {
 
     public static float median(int[] a1, int[] a2) {

@@ -13,7 +13,7 @@ public class QuickSort {
         Comparable pivot = array[(left+right)/2];
         int index = partition(array,left,right,pivot);
         quickSort(array,left,index-1);
-        quickSort(array,index+1,right);
+        quickSort(array,index,right);
     }
 
     private static int partition(Comparable[] array, int left, int right, Comparable pivot) {

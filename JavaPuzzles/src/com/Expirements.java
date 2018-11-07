@@ -14,7 +14,9 @@ public class Expirements {
 
         //System.out.println(tableSizeFor(34));
         //testBitwiseAndMod();
-        System.out.println(13>>1);
+        //System.out.println(13>>1);
+        System.out.println((-1 % 3));
+
     }
 
     static final int tableSizeFor(int cap) {
