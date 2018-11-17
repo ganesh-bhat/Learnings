@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce80a2e7-0e81-47d9-9d95-f7678a2f8f7b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/IntervalMerger.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/PalindromeChecker.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/SecondLargestNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaPuzzles/src/com/puzzles/AnonymousLoveLetter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/DuplicateFinder.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JavaPuzzles/JavaPuzzles.iml" afterPath="$PROJECT_DIR$/JavaPuzzles/JavaPuzzles.iml" />
-      <change beforePath="$PROJECT_DIR$/JavaPuzzles/src/com/common/java/LearnSplitIterator.java" afterPath="$PROJECT_DIR$/JavaPuzzles/src/com/common/java/LearnSplitIterator.java" />
-      <change beforePath="$PROJECT_DIR$/JavaPuzzles/test/com/algorithms/sorting/QuickSortTest.java" afterPath="$PROJECT_DIR$/JavaPuzzles/test/com/algorithms/sorting/QuickSortTest.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/puzzles/AnonymousLoveLetter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="616">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -35,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/PalindromeChecker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,17 +38,17 @@
         <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/SecondLargestNumber.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntervalMerger.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IntervalMerger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/IntervalMerger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="78" lean-forward="false" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+            <state relative-caret-position="308">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#487#488#0" expanded="true" />
@@ -68,6 +61,18 @@
                 <element signature="e#750#751#0" expanded="true" />
                 <element signature="e#804#805#0" expanded="true" />
                 <element signature="e#856#857#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DuplicateFinder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/DuplicateFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaPuzzles/src/com/algorithms/search/FindMaxInRotatedArray.java" />
         <option value="$PROJECT_DIR$/JavaPuzzles/src/com/algorithms/search/RotatedArray.java" />
         <option value="$PROJECT_DIR$/JavaPuzzles/src/com/algorithms/search/RotatedArrayQuestions.java" />
         <option value="$PROJECT_DIR$/JavaPuzzles/test/com/algorithms/arrays/FindMaxInRotatedArrayTest.java" />
@@ -172,6 +176,7 @@
         <option value="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/PalindromeChecker.java" />
         <option value="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/SecondLargestNumber.java" />
         <option value="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/IntervalMerger.java" />
+        <option value="$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/DuplicateFinder.java" />
       </list>
     </option>
   </component>
@@ -273,7 +278,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="SearchEverywhereHistoryKey" value="String.&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_51/jre/lib/rt.jar!/java/lang/String.class&#10;String.java&#9;FILE&#9;file://D:/GitRepo/Learnings/JavaPuzzles/src/com/algorithms/arrays/StringToInt.java&#10;Power&#9;PSI&#9;JAVA://com.generic.PowerSet&#10;MergeSo&#9;FILE&#9;file://D:/GitRepo/Learnings/JavaPuzzles/src/com/algorithms/sorting/MergeSort.java&#10;Prio&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/PriorityQueue.java&#10;PriorityQ&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/PriorityQueue.java&#10;hashtable&#9;PSI&#9;JAVA://java.util.Hashtable" />
+    <property name="SearchEverywhereHistoryKey" value="console&#9;ACTION&#9;IdeScriptingConsole&#10;String.&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_51/jre/lib/rt.jar!/java/lang/String.class&#10;String.java&#9;FILE&#9;file://D:/GitRepo/Learnings/JavaPuzzles/src/com/algorithms/arrays/StringToInt.java&#10;Power&#9;PSI&#9;JAVA://com.generic.PowerSet&#10;MergeSo&#9;FILE&#9;file://D:/GitRepo/Learnings/JavaPuzzles/src/com/algorithms/sorting/MergeSort.java&#10;Prio&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/PriorityQueue.java&#10;PriorityQ&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/PriorityQueue.java&#10;hashtable&#9;PSI&#9;JAVA://java.util.Hashtable" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
@@ -312,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IntervalMerger">
+  <component name="RunManager" selected="Application.DuplicateFinder">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -338,9 +343,14 @@
       <module name="JavaPuzzles" />
       <envs />
     </configuration>
-    <configuration name="Greeting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.greet.Greeting" />
+    <configuration name="DuplicateFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.fire_drill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.fire_drill.DuplicateFinder" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -349,7 +359,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="module-one" />
+      <module name="JavaPuzzles" />
       <envs />
     </configuration>
     <configuration name="IntervalMerger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -499,19 +509,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Greeting" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AnonymousLoveLetter" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PalindromeChecker" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SecondLargestNumber" />
-      <item index="5" class="java.lang.String" itemvalue="Application.IntervalMerger" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AnonymousLoveLetter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PalindromeChecker" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SecondLargestNumber" />
+      <item index="4" class="java.lang.String" itemvalue="Application.IntervalMerger" />
+      <item index="5" class="java.lang.String" itemvalue="Application.DuplicateFinder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.IntervalMerger" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SecondLargestNumber" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PalindromeChecker" />
-        <item index="3" class="java.lang.String" itemvalue="Application.AnonymousLoveLetter" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Greeting" />
+        <item index="0" class="java.lang.String" itemvalue="Application.DuplicateFinder" />
+        <item index="1" class="java.lang.String" itemvalue="Application.IntervalMerger" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SecondLargestNumber" />
+        <item index="3" class="java.lang.String" itemvalue="Application.PalindromeChecker" />
+        <item index="4" class="java.lang.String" itemvalue="Application.AnonymousLoveLetter" />
       </list>
     </recent_temporary>
   </component>
@@ -564,21 +574,21 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1698" height="1034" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3249139" sideWeight="0.48766956" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741398" sideWeight="0.3351235" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3673938" sideWeight="0.66487646" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.372919" sideWeight="0.66487646" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.3729963" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.3729963" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26140568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22771214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46153846" sideWeight="0.59079117" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46059933" sideWeight="0.59079117" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -719,13 +729,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/JavaPuzzles/src/com/algorithms/arrays/MedianOfSortedArrays.java</url>
-          <line>28</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/JavaPuzzles/src/com/algorithms/arrays/StringZigZag.java</url>
-          <line>27</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
@@ -789,7 +799,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/List.java" />
     <entry file="file://$PROJECT_DIR$/JavaPuzzles/test/com/algorithms/arrays/LongestPalindromeSubStringTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1054,7 +1063,7 @@
     <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/puzzles/AnonymousLoveLetter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1062,7 +1071,7 @@
     <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/PalindromeChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1070,15 +1079,15 @@
     <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/SecondLargestNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/IntervalMerger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="78" lean-forward="false" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+        <state relative-caret-position="308">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#487#488#0" expanded="true" />
@@ -1091,6 +1100,16 @@
             <element signature="e#750#751#0" expanded="true" />
             <element signature="e#804#805#0" expanded="true" />
             <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaPuzzles/src/com/fire_drill/DuplicateFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
